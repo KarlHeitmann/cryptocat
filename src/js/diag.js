@@ -274,7 +274,7 @@ Cryptocat.Diag.message = {
 			}
 		});
 	},
-
+ //HACK, dialogo que se muestra solo cuando inicio sesion con exito por primera vez desde un computador
 	deviceSetup(callback) {
 		Dialog.showMessageBox({
 			type: `info`,

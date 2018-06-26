@@ -420,6 +420,7 @@ window.addEventListener('load', function(e) {
 		onChangePassword: function(e) {
 			this.setState({password: e.target.value});
 		},
+		//HACK: Aqui se conecta con username y pass
 		onSubmit: function(e) {
 			var _t = this;
 			if (this.validInputs()) {
@@ -598,6 +599,7 @@ window.addEventListener('load', function(e) {
 			});
 		},
 		render: function() {
+			//HACK: funcion onSubmit sera la que se ejecute cuando rellene el formulario
 			return React.createElement('form', {
 				className: 'mainLogin',
 				onSubmit: this.onSubmit,
@@ -645,6 +647,7 @@ window.addEventListener('load', function(e) {
 					key: 5,
 					className: 'mainLoginRememberText'
 				}, 'Remember me')]),
+				 //HACK: crea el boton que se encargara de mandar las credenciales de login
 				React.createElement('input', {
 					key: 6,
 					type: 'submit',
@@ -1264,4 +1267,3 @@ window.addEventListener('load', function(e) {
 	})();
 
 });
-
